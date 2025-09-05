@@ -1,0 +1,14 @@
+services:
+  app:
+    image: minidfx/roomz-caldav-to-generic-connector:0.1
+    ports:
+      - 80:4000/tcp
+    build:
+      context: .
+    environment:
+      - PORT=4000
+      - BASIC_AUTH_USERNAME=<username>
+      - BASIC_AUTH_PASSWORD=<password>
+      - SERVER_URL_1=<url>
+      - SERVER_USERNAME_1=<username>
+      - SERVER_PASSWORD_1=<password>

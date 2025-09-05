@@ -1,0 +1,2 @@
+defmodule RoomzCaldavToGenericConnectorWeb.ImageHTML do
+end
